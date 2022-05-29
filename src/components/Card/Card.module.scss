@@ -1,0 +1,41 @@
+$radius: 10px;
+
+.card {
+  border: 2px solid #14bdac;
+  border-radius: $radius;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  &:hover{
+    .content{
+      bottom: 0;
+    }
+  }
+}
+
+.content {
+  padding: 10px;
+  position: absolute;
+  bottom: -170px;
+  background-color: rgb(255 255 255 / 90%);
+  width: 100%;
+  transition: .3s;
+}
+
+.img {
+  border-radius: $radius $radius 0 0;
+}
+
+.cardImage {
+  width: 25vw;
+  height: 100%;
+  position: absolute;
+}
+
+.badge {
+  top: 10px;
+  right: 20px;
+  font-size: 17px;
+  transform: skew(-15deg);
+}
+

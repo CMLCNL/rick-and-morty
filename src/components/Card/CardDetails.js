@@ -4,10 +4,11 @@ import stars from "../../assets/stars.jpg";
 import styles from "./Card.module.scss";
 
 const CardDetails = () => {
-  let { id } = useParams();
+  const { id } = useParams();
 
-  let [fetchedData, updateFetchedData] = useState([]);
-  let { name, location, origin, gender, image, status, species } = fetchedData;
+  const [fetchedData, updateFetchedData] = useState([]);
+  const { name, location, origin, gender, image, status, species } =
+    fetchedData;
 
   let api = `https://rickandmortyapi.com/api/character/${id}`;
 

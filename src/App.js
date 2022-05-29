@@ -2,9 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
 import React from "react";
 import Home from "./Pages/Home";
-
 import Navbar from "./components/Navbar/Navbar";
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Episodes from "./Pages/Episodes";
 import CardDetails from "./components/Card/CardDetails";

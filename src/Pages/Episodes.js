@@ -3,10 +3,10 @@ import Card from "../components/Card/Card";
 import InputGroup from "../components/Filter/Category/InputGroup";
 
 const Episodes = () => {
-  let [results, setResults] = React.useState([]);
-  let [info, setInfo] = useState([]);
-  let { air_date, name } = info;
-  let [id, setID] = useState(1);
+  const [results, setResults] = React.useState([]);
+  const [info, setInfo] = useState([]);
+  const { air_date, name } = info;
+  const [id, setID] = useState(1);
 
   let api = `https://rickandmortyapi.com/api/episode/${id}`;
 

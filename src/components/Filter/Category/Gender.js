@@ -1,13 +1,13 @@
 import React from "react";
+import { genders } from "../../../constants/data";
 import FilterButton from "../FilterButton";
 
 const Gender = ({ updateGender, updatePageNumber }) => {
-  let genders = ["female", "male", "genderless", "unknown"];
   return (
     <div>
       <h4 className="text-light">Genders</h4>
       <hr />
-      {genders.map((items, index) => {
+      {genders?.map((items, index) => {
         return (
           <FilterButton
             name="gender"

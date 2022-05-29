@@ -9,7 +9,7 @@ const Filter = ({
   updateGender,
   updateSpecies,
 }) => {
-  let clear = () => {
+  const clear = () => {
     updateStatus("");
     updateGender("");
     updateSpecies("");

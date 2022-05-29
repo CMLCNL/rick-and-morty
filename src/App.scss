@@ -1,0 +1,23 @@
+.active {
+  color: #14bdac !important;
+  font-weight: normal;
+  border-bottom: 3px solid #14bdac;
+}
+.btn-primary,.page-item.active .page-link{
+  color: #fff!important;
+  background-color: #14bdac!important;
+  border-color: #14bdac!important;
+}
+.page-link{
+  color: #14bdac!important;
+}
+.text-primary{
+  color: #14bdac!important;
+}
+.btn-outline-primary{
+  border-color: #14bdac!important;
+  color: #14bdac!important;
+}
+.x:checked + label{
+  color: #fff!important;
+}

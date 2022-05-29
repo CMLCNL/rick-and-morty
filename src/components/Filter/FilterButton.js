@@ -3,7 +3,7 @@ import React from "react";
 const FilterButton = ({ input, task, updatePageNumber, index, name }) => {
   return (
     <div>
-      <style jsx>
+      <style jsx="true">
         {`
           .x:checked + label {
             background-color: #14bdac;

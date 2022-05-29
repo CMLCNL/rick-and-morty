@@ -7,11 +7,11 @@ const Card = ({ page, results }) => {
   return (
     <>
       {results &&
-        results?.map((data) => (
+        results?.map((data, index) => (
           <Link
             style={{ textDecoration: "none" }}
             to={`${page}${data.id}`}
-            key={data.id}
+            key={index}
             className="col-lg-4 col-md-6 col-sm-6 col-12 mb-4 position-relative text-dark"
           >
             <div

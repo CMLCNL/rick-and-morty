@@ -6,14 +6,16 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
       <div className="container">
-        <style jsx>{`
+        <style jsx="true">
+          {`
           button[aria-expanded="false"] > .close {
             display: none;
           }
           button[aria-expanded="true"] > .open {
             display: none;
           }˜
-        `}</style>
+        `}
+        </style>
         <button
           className="navbar-toggler border-2"
           type="button"

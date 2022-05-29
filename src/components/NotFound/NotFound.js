@@ -19,7 +19,7 @@ export default function NotFound() {
             height="90px"
             viewBox="0 0 49.13 90.16"
           >
-            <path className={styles.cls - 1} />
+            <path className={styles.cls} />
           </svg>
           <div className={styles.saliva2}></div>
         </div>

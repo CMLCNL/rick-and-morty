@@ -22,7 +22,7 @@ const CardDetails = () => {
   return (
     <div className="container d-flex justify-content-center mb-5">
       <div className="d-flex flex-column gap-3">
-        <h1 className="text-center  text-light">{name}</h1>
+        <h1 className="text-center text-light">{name}</h1>
         <div className="w-100 h-25 d-flex justify-content-center align-items-end position-relative">
           <img src={stars} className="w-100 h-100 object-fit-cover" alt="" />
           <img className={`${styles.cardImage}`} src={image} alt="" />
@@ -45,9 +45,7 @@ const CardDetails = () => {
             <span className="fw-bold text-light">{species}</span>
           </div>
           <div className="">
-            <span className="fw-bold text-light" text-light>
-              Status: {status}
-            </span>
+            <span className="fw-bold text-light">Status: {status}</span>
           </div>
         </div>
       </div>

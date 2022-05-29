@@ -1,0 +1,21 @@
+.input {
+  width: 30%;
+  border: 2px solid #14bdac;
+  border-radius: 8px;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+  &:focus {
+    outline: none;
+    width: 65%;
+  }
+  &::placeholder {
+    color: #14bdac;
+  }
+  color: #14bdac;
+}
+
+@media (max-width: 576px) {
+  .input {
+    width: 80%;
+  }
+}

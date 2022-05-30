@@ -1,20 +1,19 @@
 import React from "react";
-import { genders } from "../../../constants/data";
 import FilterButton from "../FilterButton";
 
-const Gender = ({ updateGender, updatePageNumber }) => {
+const Category = ({ update, updatePageNumber, title, data }) => {
   return (
     <div>
-      <h4 className="text-light">Genders</h4>
+      <h4 className="text-light">{title}</h4>
       <hr />
-      {genders?.map((items, index) => {
+      {data?.map((items, index) => {
         return (
           <FilterButton
-            name="gender"
+            name={title.toString().toLowerCase()}
             index={index}
             key={index}
             updatePageNumber={updatePageNumber}
-            task={updateGender}
+            task={update}
             input={items}
           />
         );
@@ -23,4 +22,4 @@ const Gender = ({ updateGender, updatePageNumber }) => {
   );
 };
 
-export default Gender;
+export default Category;

@@ -1,7 +1,6 @@
 import React from "react";
-import Gender from "./Category/Gender";
-import Species from "./Category/Species";
-import Status from "./Category/Status";
+import { genders, species, status } from "../../constants/data";
+import Category from "./Category/Category";
 
 const Filter = ({
   updatePageNumber,
@@ -26,18 +25,24 @@ const Filter = ({
       >
         Clear Filters
       </div>
-      <aside className="border border-3 p-4 d-flex flex-column gap-4 bg-dark">
-        <Status
+      <aside className="p-4 d-flex flex-column gap-4 bg-dark">
+        <Category
+          update={updateStatus}
           updatePageNumber={updatePageNumber}
-          updateStatus={updateStatus}
+          data={status}
+          title="Status"
         />
-        <Species
+        <Category
+          title="Species"
+          update={updateSpecies}
           updatePageNumber={updatePageNumber}
-          updateSpecies={updateSpecies}
+          data={species}
         />
-        <Gender
+        <Category
+          update={updateGender}
           updatePageNumber={updatePageNumber}
-          updateGender={updateGender}
+          data={genders}
+          title="Genders"
         />
       </aside>
     </div>
